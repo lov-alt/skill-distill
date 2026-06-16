@@ -1,5 +1,10 @@
 # skill-distill
 
+[![PyPI](https://img.shields.io/pypi/v/skill-distill?color=blue)](https://pypi.org/project/skill-distill/)
+[![Python](https://img.shields.io/pypi/pyversions/skill-distill)](https://pypi.org/project/skill-distill/)
+[![License](https://img.shields.io/github/license/lov-alt/skill-distill)](LICENSE)
+[![Tests](https://img.shields.io/badge/tests-7%2F7%20passed-green)](tests/)
+
 > Sharpen AI agent skills. Better descriptions = better routing.
 
 **skill-distill** helps you write clear, distinguishable skill descriptions so AI agents (Claude Code, Cursor, etc.) pick the right skill every time — even when you have 50+ skills installed.
