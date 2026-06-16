@@ -32,6 +32,29 @@ pip install git+https://github.com/skill-distill/skill-distill.git
 pip install skill-distill[embed]
 ```
 
+## Claude Code Integration
+
+To use skill-distill inside Claude Code conversations — just ask the agent to check your skills and it'll do it automatically:
+
+```powershell
+# Install the skill into Claude Code
+cp SKILL.md ~/.claude/skills/skill-distill.md
+```
+
+Or from the repo:
+
+```powershell
+# In your project's .claude/skills/ directory
+curl -o .claude/skills/skill-distill.md \
+  https://raw.githubusercontent.com/lov-alt/skill-distill/master/SKILL.md
+```
+
+Then in conversation: *"Check my skills directory for routing issues"* → Agent picks up skill-distill automatically.
+
+> We [dogfood our own tool](SKILL.md) — the SKILL.md description passes `skill-distill lint` with 0 errors.
+
+---
+
 ## Usage
 
 ### Lint — check description quality
