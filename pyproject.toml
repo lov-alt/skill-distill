@@ -1,0 +1,57 @@
+[build-system]
+requires      = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name           = "skill-distill"
+version        = "0.1.0"
+description    = "Sharpen AI agent skills. Lint, diff, optimize, and benchmark skill descriptions for better routing accuracy."
+readme         = "README.md"
+license        = { text = "MIT" }
+authors        = [{ name = "Skill Distill Contributors" }]
+keywords       = ["ai-agent", "skill", "claude-code", "routing", "cli"]
+classifiers    = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+requires-python = ">=3.10"
+
+dependencies = [
+    "typer>=0.12",
+    "rich>=13.0",
+    "pydantic>=2.0",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+embed = ["sentence-transformers>=3.0"]
+dev    = [
+    "pytest>=8.0",
+    "pytest-cov>=5.0",
+    "ruff>=0.5",
+]
+
+[project.scripts]
+skill-distill = "skill_distill.cli:app"
+
+[project.urls]
+Homepage  = "https://github.com/skill-distill/skill-distill"
+Repository = "https://github.com/skill-distill/skill-distill"
+Issues     = "https://github.com/skill-distill/skill-distill/issues"
+
+[tool.ruff]
+line-length        = 100
+target-version     = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "W", "UP"]
+
+[tool.pytest.ini_options]
+testpaths   = ["tests"]
+addopts     = ["-v", "--tb=short"]

@@ -1,0 +1,9 @@
+skills_dir: ./tests/fixtures
+test_cases:
+  - query: "review this PR for security issues"
+    expected: security-code-review
+  - query: "check my code for bugs"
+    expected: code-review
+    acceptable: [review-pr]
+  - query: "help me with something"
+    expected: helper-tool
