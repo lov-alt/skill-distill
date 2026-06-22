@@ -31,7 +31,7 @@ skill-distill diagnoses these problems and tells you exactly how to fix them.
 pip install skill-distill
 
 # Or bleeding-edge from GitHub
-pip install git+https://github.com/skill-distill/skill-distill.git
+pip install git+https://github.com/lov-alt/skill-distill.git
 
 # With embedding support (better semantic analysis)
 pip install skill-distill[embed]

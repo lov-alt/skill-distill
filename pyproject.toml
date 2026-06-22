@@ -41,9 +41,9 @@ dev    = [
 skill-distill = "skill_distill.cli:app"
 
 [project.urls]
-Homepage  = "https://github.com/skill-distill/skill-distill"
-Repository = "https://github.com/skill-distill/skill-distill"
-Issues     = "https://github.com/skill-distill/skill-distill/issues"
+Homepage  = "https://github.com/lov-alt/skill-distill"
+Repository = "https://github.com/lov-alt/skill-distill"
+Issues     = "https://github.com/lov-alt/skill-distill/issues"
 
 [tool.ruff]
 line-length        = 100
